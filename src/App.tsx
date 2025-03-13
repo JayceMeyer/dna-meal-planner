@@ -12,9 +12,9 @@ import Profile from './pages/Profile.tsx'
 import Navbar from './components/Navbar.tsx'
 import Footer from './components/Footer.tsx'
 
-function App() {
+export default function App() {
   return (
-    <Router>
+    <Router basename="/dna-meal-planner">
       <div style={{ backgroundColor: '#e2e8f0' }} className="min-h-screen flex flex-col text-gray-800">
         <Navbar />
         <main style={{ backgroundColor: '#f0f4f8' }} className="flex-grow container mx-auto px-4 py-8 my-6 rounded-lg shadow-md">
@@ -31,5 +31,3 @@ function App() {
     </Router>
   )
 }
-
-export default App
