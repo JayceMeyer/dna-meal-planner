@@ -28,9 +28,16 @@ a:hover {
 
 body {
   margin: 0;
-  display: flex;
+  padding: 0;
   min-width: 320px;
   min-height: 100vh;
+  width: 100%;
+}
+
+#app {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
 }
 
 h1 {
