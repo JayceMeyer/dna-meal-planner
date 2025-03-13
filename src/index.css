@@ -1,0 +1,151 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light;
+  color: #213547;
+  background-color: #edf2f7; /* Slightly darker background */
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  font-weight: 500;
+  color: #0d9488; /* Teal color for links to match theme */
+  text-decoration: inherit;
+}
+a:hover {
+  color: #0f766e; /* Darker teal on hover */
+}
+
+body {
+  margin: 0;
+  display: flex;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #f0f4f8; /* Slightly darker button background */
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+
+button:hover {
+  border-color: #0d9488;
+}
+
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+/* Custom background colors for better contrast */
+.bg-custom-light {
+  background-color: #f0f4f8 !important; /* Slightly darker than white */
+  color: #213547 !important;
+}
+
+.bg-custom-teal {
+  background-color: #0d9488 !important; /* Teal color */
+  color: white !important;
+}
+
+.bg-custom-teal-light {
+  background-color: #d1fae5 !important; /* Light teal background */
+  color: #065f46 !important; /* Dark teal text for contrast */
+}
+
+.bg-custom-gray {
+  background-color: #e2e8f0 !important; /* Darker gray background */
+  color: #213547 !important;
+}
+
+/* Ensure all text in teal backgrounds has proper contrast */
+.bg-teal-600, .bg-teal-700, .bg-teal-800 {
+  color: white !important;
+}
+
+/* Ensure all text in white or light backgrounds has proper contrast */
+.bg-white, .bg-gray-50, .bg-gray-100 {
+  background-color: #f0f4f8 !important; /* Replace white with slightly darker shade */
+  color: #213547 !important;
+}
+
+/* Override any conflicting text colors in specific components */
+.text-white {
+  color: white !important;
+}
+
+.text-gray-800, .text-gray-700, .text-gray-600 {
+  color: inherit !important;
+}
+
+/* Fix for any buttons with white text that might appear on white backgrounds */
+button.bg-white, a.bg-white {
+  background-color: #f0f4f8 !important;
+  color: #0d9488 !important;
+}
+
+/* Fix for tab navigation in Profile page */
+button.bg-white.text-gray-700 {
+  background-color: #f0f4f8 !important;
+  color: #4b5563 !important;
+}
+
+/* Gradient backgrounds with better contrast */
+.bg-gradient-to-r.from-teal-500.to-teal-700 {
+  background-image: linear-gradient(to right, #0d9488, #0f766e) !important;
+  color: white !important;
+}
+
+/* Card backgrounds */
+.shadow-md, .shadow-lg, .shadow-xl {
+  background-color: #f8fafc !important; /* Slightly off-white for cards */
+  color: #213547 !important;
+}
+
+/* Colored backgrounds for different meal types */
+.bg-yellow-100 {
+  background-color: #fef3c7 !important; /* Darker yellow */
+  color: #92400e !important;
+}
+
+.bg-blue-100 {
+  background-color: #dbeafe !important; /* Darker blue */
+  color: #1e40af !important;
+}
+
+.bg-purple-100 {
+  background-color: #ede9fe !important; /* Darker purple */
+  color: #5b21b6 !important;
+}
+
+.bg-green-100 {
+  background-color: #d1fae5 !important; /* Darker green */
+  color: #065f46 !important;
+}
+
+.bg-teal-100 {
+  background-color: #ccfbf1 !important; /* Darker teal */
+  color: #0f766e !important;
+}
