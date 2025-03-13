@@ -51,9 +51,15 @@ const getMealImage = (meal: Meal, mealType: string) => {
 // Debug function to check if images are loading
 const debugMealImages = () => {
   console.log("Checking meal images:");
-  mockMealPlan.days[0].breakfast && console.log(`Breakfast: ${mockMealPlan.days[0].breakfast.name} -> ${getMealImage(mockMealPlan.days[0].breakfast, 'Breakfast')}`);
-  mockMealPlan.days[0].lunch && console.log(`Lunch: ${mockMealPlan.days[0].lunch.name} -> ${getMealImage(mockMealPlan.days[0].lunch, 'Lunch')}`);
-  mockMealPlan.days[0].dinner && console.log(`Dinner: ${mockMealPlan.days[0].dinner.name} -> ${getMealImage(mockMealPlan.days[0].dinner, 'Dinner')}`);
+  if (mockMealPlan.days[0].breakfast) {
+    console.log(`Breakfast: ${mockMealPlan.days[0].breakfast.name} -> ${getMealImage(mockMealPlan.days[0].breakfast, 'Breakfast')}`);
+  }
+  if (mockMealPlan.days[0].lunch) {
+    console.log(`Lunch: ${mockMealPlan.days[0].lunch.name} -> ${getMealImage(mockMealPlan.days[0].lunch, 'Lunch')}`);
+  }
+  if (mockMealPlan.days[0].dinner) {
+    console.log(`Dinner: ${mockMealPlan.days[0].dinner.name} -> ${getMealImage(mockMealPlan.days[0].dinner, 'Dinner')}`);
+  }
   mockMealPlan.days[0].snacks.forEach(snack => {
     console.log(`Snack: ${snack.name} -> ${getMealImage(snack, 'Snack')}`);
   });

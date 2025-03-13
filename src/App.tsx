@@ -2,15 +2,15 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import './App.css'
 
 // Pages
-import Home from './pages/Home'
-import DNAUpload from './pages/DNAUpload'
-import MealPlan from './pages/MealPlan'
-import GroceryList from './pages/GroceryList'
-import Profile from './pages/Profile'
+import Home from './pages/Home.tsx'
+import DNAUpload from './pages/DNAUpload.tsx'
+import MealPlan from './pages/MealPlan.tsx'
+import GroceryList from './pages/GroceryList.tsx'
+import Profile from './pages/Profile.tsx'
 
 // Components
-import Navbar from './components/Navbar'
-import Footer from './components/Footer'
+import Navbar from './components/Navbar.tsx'
+import Footer from './components/Footer.tsx'
 
 function App() {
   return (
